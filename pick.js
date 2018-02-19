@@ -1,2 +1,3 @@
-export default (obj, ...props) =>
-  Object.assign({}, ...props.map(prop => ({ [prop]: o[prop] })));
+export default (obj, ...keys) => ({
+  ...keys.map(key => ({ [key]: obj[key] })),
+});
