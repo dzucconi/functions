@@ -14,3 +14,7 @@ export const visible = el => {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 };
+
+export const promise = obj =>
+  Promise.resolve(obj) === obj
+
